@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.gui.portfolio.PortfolioController">
+   <children>
+      <VBox layoutX="258.0" layoutY="91.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="50.0" style="-fx-background-color: rgb(88, 91, 96);">
+               <children>
+                  <Label layoutX="14.0" layoutY="5.0" prefHeight="43.0" prefWidth="83.0" text="Portfolio" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="235.0" layoutY="5.0" prefHeight="43.0" prefWidth="329.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="235.4" AnchorPane.rightAnchor="235.4" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <TextField fx:id="search" prefHeight="40.0" prefWidth="284.0" promptText="SEARCH" />
+                        <Button fx:id="go" mnemonicParsing="false" prefHeight="40.0" prefWidth="49.0" text="GO" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="refresh" layoutX="734.0" layoutY="14.0" mnemonicParsing="false" text="Refresh" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="551.0" prefWidth="800.0" style="-fx-background-color: rgb(52, 57, 66);">
+               <children>
+                  <ScrollPane prefHeight="550.0" prefWidth="550.0" style="-fx-background-color: rgb(52, 57, 66);">
+                     <content>
+                        <VBox fx:id="myStocks" prefHeight="549.0" prefWidth="548.0" style="-fx-background-color: rgb(52, 57, 66);" />
+                     </content>
+                  </ScrollPane>
+                  <VBox fx:id="portfolioAnalytics" prefHeight="550.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

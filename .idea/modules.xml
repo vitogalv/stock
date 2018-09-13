@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Libraries/mysql-connector-java-8.0.12/mysql-connector-java-8.0.12/src/build/build.iml" filepath="$PROJECT_DIR$/../Libraries/mysql-connector-java-8.0.12/mysql-connector-java-8.0.12/src/build/build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Libraries/mysql-connector-java-8.0.12/mysql-connector-java-8.0.12/src/generated/generated.iml" filepath="$PROJECT_DIR$/../Libraries/mysql-connector-java-8.0.12/mysql-connector-java-8.0.12/src/generated/generated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stock.iml" filepath="$PROJECT_DIR$/stock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Libraries/mysql-connector-java-8.0.12/mysql-connector-java-8.0.12/src/test/test.iml" filepath="$PROJECT_DIR$/../Libraries/mysql-connector-java-8.0.12/mysql-connector-java-8.0.12/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
