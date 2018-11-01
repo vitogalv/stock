@@ -15,7 +15,7 @@ import java.util.LinkedList;
 public class DatabaseUtils {
 
     private String getConfigUrl(){
-        return "jdbc:mysql://address=(host=localhost)(port=3306)(user=root)(password=Cla$$ified123)(useSSL=false)(emulateLocators= true)/stockmarket";
+        return "jdbc:mysql://address=(host=localhost)(port=3306)(user=root)(password=*******)(useSSL=false)(emulateLocators= true)/stockmarket";
     }
 
     /**

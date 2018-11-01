@@ -9,14 +9,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.gui.portfolio.PortfolioController">
    <children>
       <VBox layoutX="258.0" layoutY="91.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane prefHeight="50.0" style="-fx-background-color: rgb(88, 91, 96);">
                <children>
-                  <Label layoutX="14.0" layoutY="5.0" prefHeight="43.0" prefWidth="83.0" text="Portfolio" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                  <Label fx:id="title" layoutX="14.0" layoutY="5.0" prefHeight="43.0" prefWidth="83.0" text="Portfolio" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -34,10 +33,29 @@
                <children>
                   <ScrollPane prefHeight="550.0" prefWidth="550.0" style="-fx-background-color: rgb(52, 57, 66);">
                      <content>
-                        <VBox fx:id="myStocks" prefHeight="549.0" prefWidth="548.0" style="-fx-background-color: rgb(52, 57, 66);" />
+                        <VBox fx:id="myStocksVBox" alignment="TOP_CENTER" prefHeight="549.0" prefWidth="548.0" style="-fx-background-color: rgb(52, 57, 66);">
+                           <children>
+                              <Label text="My Stocks" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children></VBox>
                      </content>
                   </ScrollPane>
-                  <VBox fx:id="portfolioAnalytics" prefHeight="550.0" prefWidth="250.0" />
+                  <ScrollPane fx:id="portfolioScroll" prefHeight="551.0" prefWidth="250.0" style="-fx-background-color: rgb(52, 57, 66);">
+                     <content>
+                        <VBox fx:id="portfolioVBox" alignment="TOP_CENTER" prefHeight="549.0" prefWidth="248.0" style="-fx-background-color: rgb(52, 57, 66);">
+                           <children>
+                              <Label text="Portfolio  Stats" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
                </children>
             </HBox>
          </children>
